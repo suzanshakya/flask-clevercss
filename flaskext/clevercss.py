@@ -11,7 +11,9 @@
     :license: MIT, see LICENSE for more details.
 """
 
-import os, subprocess
+import os
+import sys
+import orig_clevercss
 
 def clevercss(app):
     @app.before_request
@@ -32,4 +34,5 @@ def clevercss(app):
                 css_mtime = os.path.getmtime(css_path)
             clever_mtime = os.path.getmtime(clever_path)
             if clever_mtime >= css_mtime:
-                subprocess.call(['python', '~/bin/clevercss', clever_path])
+                sys.argv[1:] = [clever_path]
+                orig_clevercss.main()
