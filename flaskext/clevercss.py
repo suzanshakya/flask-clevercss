@@ -7,6 +7,7 @@
     application.
 
     :copyright: (c) 2010 by Steve Losh.
+    :copyright: (c) 2011 by Sujan Shakya.
     :license: MIT, see LICENSE for more details.
 """
 
