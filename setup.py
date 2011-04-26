@@ -1,16 +1,16 @@
 """
-flask-lesscss
+flask-clevercss
 ----------
 
-A small Flask extension that makes it easy to use LessCSS with your Flask
+A small Flask extension that makes it easy to use clevercss with your Flask
 application.
 
 Links
 `````
 
-* `documentation <http://sjl.bitbucket.org/flask-lesscss/>`_
+* `documentation <https://github.com/suzanshakya/flask-clevercss>`_
 * `development version
-  <http://bitbucket.org/sjl/flask-lesscss/get/tip.gz#egg=flask-lesscss-dev`_
+  <https://download.github.com/suzanshakya-flask-clevercss-401a017.tar.gz#egg=flask-clevercss-dev`_
 
 
 """
@@ -18,13 +18,13 @@ from setuptools import setup
 
 
 setup(
-    name='flask-lesscss',
+    name='flask-clevercss',
     version='0.9.1',
-    url='http://sjl.bitbucket.org/flask-lesscss/',
+    url='https://github.com/suzanshakya/flask-clevercss',
     license='MIT',
-    author='Steve Losh',
-    author_email='steve@stevelosh.com',
-    description='A small Flask extension that adds LessCSS support to Flask.',
+    author='Sujan Shakya',
+    author_email='suzan.shakya@gmail.com',
+    description='A small Flask extension that adds clevercss support to Flask.',
     long_description=__doc__,
     packages=['flaskext'],
     namespace_packages=['flaskext'],
