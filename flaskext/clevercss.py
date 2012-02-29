@@ -18,7 +18,7 @@ import orig_clevercss
 def clevercss(app):
     @app.before_request
     def _render_clever_css():
-        static_dir = app.root_path + app.static_path
+        static_dir = os.path.join(app.root_path, app._static_folder)
 
         clever_paths = []
         for path, subdirs, filenames in os.walk(static_dir):
